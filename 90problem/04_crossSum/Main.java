@@ -6,14 +6,15 @@ public class Main {
         // input
         Scanner sc = new Scanner(System.in);
         
-        int[][] a = new int[2000][2000];
-        int[][] Answer = new int[2000][2000];
-
+        
         int height = sc.nextInt();
         int width = sc.nextInt();
 
-        int[] row = new int[2000];
-        int[] column = new int[2000];
+        int[][] a = new int[height][width];
+        int[][] Answer = new int[height][width];
+
+        int[] row = new int[width];
+        int[] column = new int[height];
 
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
@@ -40,15 +41,16 @@ public class Main {
 
         // output
         for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
-                if (j >= 1) System.out.print(" ");
-                
-                System.out.print(Answer[i][j]);
-            }
-            System.out.println();
-        }
+            StringBuilder sb = new StringBuilder();
 
-        sc.close();
+            for (int j = 0; j < width; j++) {
+                if (j != 0) {
+                    sb.append(" ");
+                }
+                sb.append(Answer[i][j]);
+            }
+            System.out.println(sb.toString());
+        }
 
 	}
 }
