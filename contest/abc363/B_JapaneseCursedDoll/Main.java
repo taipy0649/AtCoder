@@ -1,4 +1,4 @@
-package contest.abc.B_JapaneseCursedDoll;
+package contest.abc363.B_JapaneseCursedDoll;
 
 import java.util.ArrayList;
 import java.util.Collections;
