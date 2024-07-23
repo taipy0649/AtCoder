@@ -12,10 +12,10 @@ public class Main {
         int b = sc.nextInt();
 
 
-        boolean[] dp = new boolean[n + 2];
+        boolean[] dp = new boolean[n + 1];
 
         for (int i = 0; i <= n; i++) {
-            if (i > a && dp[i-a] == false) {
+            if (i >= a && dp[i-a] == false) {
                 dp[i] = true;
             } else if (i >= b && dp[i-b] == false) {
                 dp[i] = true;
