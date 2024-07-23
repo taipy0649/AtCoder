@@ -36,8 +36,9 @@ public class Main {
         }
 
         int kumiawase = top / bottom;
+        System.out.println(kumiawase);
+        System.out.println(lengthOfpalindrome);
 
-        
         // System.out.println(ans);
         // System.out.println(top);
 
